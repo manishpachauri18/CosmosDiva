@@ -1,0 +1,267 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f8e8ff 0%, #ffe6f2 100%);
+  color: #5e3a63;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+header {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 15px rgba(158, 85, 160, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  color: #c76ca8;
+}
+
+.logo-text {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #9c4d9e, #e76c9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #6b3c6d;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #7e4c81;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(158, 85, 160, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #c76ca8;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  margin-bottom: 0.8rem;
+  color: #8e4d91;
+}
+
+/* Subscription Form */
+.subscription {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(158, 85, 160, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.subscription h2 {
+  margin-bottom: 1.5rem;
+  color: #8e4d91;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0b0d5;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="email"]:focus {
+  border-color: #c76ca8;
+}
+
+.btn {
+  background: linear-gradient(to right, #9c4d9e, #e76c9e);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(158, 85, 160, 0.3);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 2rem;
+  margin-top: auto;
+  box-shadow: 0 -2px 15px rgba(158, 85, 160, 0.1);
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #c76ca8;
+  font-size: 1.5rem;
+  margin: 0 0.8rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #9c4d9e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 2.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .subscription {
+    padding: 1.5rem;
+  }
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Disabled button look (faded + no hover) */
+.btn:disabled {
+  opacity: 0.5;          /* makes it look faded */
+  cursor: not-allowed;   /* changes cursor */
+  transform: none;       /* disable hover scaling */
+}
